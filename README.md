@@ -1,6 +1,6 @@
-# [Terragrunt] (https://github.com/gruntwork-io/terragrunt) configurations 
+# Terragrunt configurations.
 
-For setting up VPC and EKS. Use in parallel with the cv-tf repo
+[Terragrunt](https://github.com/gruntwork-io/terragrunt) configurations for setting up VPC and EKS. Use in parallel with the [cv-tf](https://github.com/stutily/cv-tf) repo
 
 Usage: 
 
