@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# After hitting the wrong related source directory a few times and getting 
+# bored of rewriting commands, I made a small wrapper around terragrunt 
+# to find the relevant local module file if there is a .tgl file in the 
+# current directory, and append that as the --terragrunt-source param to terragrunt
+# 
+# If no .tgl file exists then exit with a message 
+#
+# should generate ... terragrunt plan --terragrunt-source ../../../../../cv-terraform/cv-terraform-eu-west-2-vpc//
+#
+# most useful if you alias this file or link it into ~/bin/
+
+if [ -f .tgl ] ; then 
+    TGL=`cat .tgl`
+    echo "running terragrunt $* --terragrunt-source $TGL"
+   terragrunt $* --terragrunt-source $TGL
+else 
+    echo "no .tgl file - see $0 for intro" 
+    exit 1
+fi
