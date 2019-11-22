@@ -31,6 +31,6 @@ dependency "vpc" {
   }
 
 terraform {
-  source = "git::ssh://git@github.com/stutily/cv-tf.git//ecr"
+  source = "git::ssh://git@github.com/cabinetoffice/national-leadership-centre-terraform.git//ecr"
 }
 

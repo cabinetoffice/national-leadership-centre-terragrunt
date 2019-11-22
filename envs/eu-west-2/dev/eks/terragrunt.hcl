@@ -35,6 +35,6 @@ inputs = {
 }
 
 terraform {
-  source = "git::ssh://git@github.com/stutily/cv-tf.git//eks"
+  source = "git::ssh://git@github.com/cabinetoffice/national-leadership-centre-terraform.git//eks"
 }
 

@@ -1,5 +1,5 @@
 terraform {
-  source = "git::ssh://git@github.com/stutily/cv-tf.git//vpc"
+  source = "git::ssh://git@github.com/cabinetoffice/national-leadership-centre-terraform.git//vpc"
 }
 
 include {
