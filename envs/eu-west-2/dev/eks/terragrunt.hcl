@@ -31,7 +31,7 @@ inputs = {
   # where to put kubeconfig output
   write_kubeconfig = true
   # where to write kubeconfig - does not seem to be working 
-  config_output_path = "/Users/tily/.kube/config"
+  config_output_path = "/Users/tily/.kube/eks-testing-config"
 }
 
 terraform {
