@@ -4,7 +4,7 @@
 
 Usage: 
 
-  - change into the directory for your configs (or create a new one) and configure the remote state location and lockfile in terragtunr.hcl
+  - change into the directory for your configs (or create a new one) and configure the remote state location and lockfile in terragrunt.hcl
   - run `terragrunt plan-all` to show what changes will be made
   - the repo configured in the terragrunt.hcl file will be pulled (if needed) and applied. 
   
