@@ -9,7 +9,7 @@ Usage:
   - the repo configured in the terragrunt.hcl file will be pulled (if needed) and applied. 
   
   
-Note - for local use, the repo will not be pulled again if it exists - so use local sources instead. For local developement use without pulling the git repos there is a helper script `tgl' which can be configured with a `.tgl` file in each path that you will run the `tgl` command from which speficies where the local sources are - this saves typing the path each time as `terragrunt plan --terragrunt-source /Where/My/Local/Terraform/Source/Is/` - for example 
+Note - for local use, the repo will not be pulled again if it exists - so use local sources instead. For local developement use without pulling the git repos there is a helper script `tgl` which can be configured with a `.tgl` file in each path that you will run the `tgl` command from which speficies where the local sources are - this saves typing the path each time as `terragrunt plan --terragrunt-source /Where/My/Local/Terraform/Source/Is/` - for example 
 
 ```
 $ pwd
