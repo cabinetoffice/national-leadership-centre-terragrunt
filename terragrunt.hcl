@@ -2,16 +2,15 @@
 remote_state {
   backend = "s3"
   config = {
-    bucket         = "subatomic-dev-gsp-state-4"
+    bucket         = "nlc-infrastructure-tfstate"
     key            = "${path_relative_to_include()}/terraform.tfstate"
     region         = "eu-west-2"
     encrypt        = true
-    dynamodb_table = "subatomic-tf-dev-gsp-lock-4"
+    dynamodb_table = "nlc-infrastructure-tfstate"
   }
 }
 
 inputs = {
+  aws_profile = "nlc"
   aws_region = "eu-west-2"
 }
-
-
