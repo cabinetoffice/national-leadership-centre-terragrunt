@@ -23,14 +23,14 @@ inputs = {
   vpc_id                   = dependency.vpc.outputs.vpc_id
   private_subnets          = dependency.vpc.outputs.private_subnets
   public_subnets           = dependency.vpc.outputs.public_subnets
-  eks_worker_instance_type = "t2.medium"
+  eks_worker_instance_type = "t3.medium"
 
   # what to call the cluster 
-  cluster_name = "nlc-infrastructure-dev"
+  cluster_name = "nlc-infrastructure-production"
   # whether to write kubeconfig file  (default true)
   write_kubeconfig = true
   # where to write kubeconfig file 
-  config_output_path = "/Users/tily/.kube/nlc-infrastructure-dev-kubeconfig"
+  config_output_path = "/Users/tily/.kube/nlc-infrastructure-production-kubeconfig"
 }
 
 terraform {
