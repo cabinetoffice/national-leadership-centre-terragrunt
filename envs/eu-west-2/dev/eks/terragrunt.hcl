@@ -29,8 +29,8 @@ inputs = {
   cluster_name = "nlc-infrastructure-dev"
   # whether to write kubeconfig file  (default true)
   write_kubeconfig = true
-  # where to write kubeconfig file 
-  config_output_path = "/Users/tily/.kube/nlc-infrastructure-dev-kubeconfig"
+  # where to write kubeconfig file
+  config_output_path = "${get_env("HOME", ".")}/.kube/"
 }
 
 terraform {
