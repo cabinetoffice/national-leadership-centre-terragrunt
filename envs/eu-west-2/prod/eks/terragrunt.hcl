@@ -27,11 +27,28 @@ inputs = {
 
   # what to call the cluster 
   cluster_name = "nlc-infrastructure-production"
+
   # whether to write kubeconfig file  (default true)
   write_kubeconfig = true
+
   # where to write kubeconfig file
   config_output_path = "${get_env("HOME", ".")}/.kube/"
-  #
+
+  map_roles = []
+  map_accounts = []
+  map_users = [
+    {
+      userarn  = "arn:aws:iam::***REMOVED***:user/mike.bell",
+      username = "mike.bell"
+      groups   = ["system:masters"]
+    },
+    {
+      userarn  = "arn:aws:iam::***REMOVED***:user/stu.tily",
+      username = "stu.tily"
+      groups   = ["system:masters"]
+    }
+  ]
+  
 }
 
 terraform {
