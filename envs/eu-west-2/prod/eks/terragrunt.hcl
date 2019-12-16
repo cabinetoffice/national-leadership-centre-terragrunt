@@ -34,6 +34,10 @@ inputs = {
   # where to write kubeconfig file
   config_output_path = "${get_env("HOME", ".")}/.kube/"
 
+  # whether to manage aws auth or not 
+  # and the roles, users, and accounts to add
+  manage_aws_auth = true 
+
   map_roles = []
   map_accounts = []
   map_users = [
@@ -48,7 +52,6 @@ inputs = {
       groups   = ["system:masters"]
     }
   ]
-  
 }
 
 terraform {

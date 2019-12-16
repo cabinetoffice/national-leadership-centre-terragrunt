@@ -1,0 +1,6 @@
+# example of variables you might set for your profile 
+# and kubeonfigs 
+# .local.vars itself is in .gitignore 
+
+export AWS_PROFILE="my_pofile_name"
+export KUBECONFIG="/path/to/my/kubeconfig"
