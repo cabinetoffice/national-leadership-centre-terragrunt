@@ -8,4 +8,5 @@ include {
 
 inputs = {
   vpc_name = "eu-west-2-vpc-prod"
+  cluster_name = "nlc-infrastructure-production"
 }
