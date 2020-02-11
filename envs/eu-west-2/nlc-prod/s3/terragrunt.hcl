@@ -20,6 +20,7 @@ dependency "vpc" {
 
 inputs = {
   s3fs_bucket_name            = "nlc-static-prod"
+  s3fs_bucket_name_staging    = "nlc-static-staging"
   semver_bucket_name          = "nlc-concourse-semver"
 }
 
