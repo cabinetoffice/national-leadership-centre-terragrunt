@@ -20,11 +20,12 @@ dependency "vpc" {
 }
 
 inputs = {
-    es_instance_type = "t2.small.elasticsearch" 
-    es_instance_count = 3
-    es_dedicated_master_type = "t2.small.elasticsearch"
-    es_dedicated_master_threshold = 0
-    es_domain_name = "es-connect"
+  es_version = "6.8" 
+  es_instance_type = "t2.small.elasticsearch" 
+  es_instance_count = 3
+  es_dedicated_master_type = "t2.small.elasticsearch"
+  es_dedicated_master_threshold = 0
+  es_domain_name = "es-connect"
   vpc_id            = dependency.vpc.outputs.vpc_id
   private_subnet_cidr_blocks   = dependency.vpc.outputs.private_subnet_cidr_blocks
   public_subnet_cidr_blocks    = dependency.vpc.outputs.public_subnet_cidr_blocks
