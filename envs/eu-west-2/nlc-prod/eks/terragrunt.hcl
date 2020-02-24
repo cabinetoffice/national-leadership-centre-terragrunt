@@ -41,11 +41,11 @@ inputs = {
   map_roles = []
   map_accounts = []
   map_users = [
-#    {
-#      userarn  = "arn:aws:iam::***REMOVED***:user/mike.bell",
-#      username = "mike.bell"
-#      groups   = ["system:masters"]
-#    },
+    {
+      userarn  = "arn:aws:iam::***REMOVED***:user/mike.bell",
+      username = "mike.bell"
+      groups   = ["system:masters"]
+    },
     {
       userarn  = "arn:aws:iam::***REMOVED***:user/stu.tily",
       username = "stu.tily"
