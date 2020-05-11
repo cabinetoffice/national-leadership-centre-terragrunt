@@ -27,6 +27,8 @@ inputs = {
 
   # what to call the cluster 
   cluster_name = "nlc-prod"
+  cluster_version = "1.14"
+  ami_id = "ami-0726488afbd16de79"
 
   # whether to write kubeconfig file  (default true)
   write_kubeconfig = true
