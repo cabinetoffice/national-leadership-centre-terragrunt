@@ -3,3 +3,4 @@
 .tgl
 .local.vars
 notes
+terraform.tfvars

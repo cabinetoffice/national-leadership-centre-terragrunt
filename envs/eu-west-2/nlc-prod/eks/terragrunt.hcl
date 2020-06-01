@@ -25,7 +25,7 @@ inputs = {
   public_subnets           = dependency.vpc.outputs.public_subnets
   eks_worker_instance_type = "t3.large"
 
-  # what to call the cluster 
+  # what to call the cluster
   cluster_name = "nlc-prod"
   cluster_version = "1.14"
   ami_id = "ami-0726488afbd16de79"
@@ -36,24 +36,13 @@ inputs = {
   # where to write kubeconfig file
   config_output_path = "${get_env("HOME", ".")}/.kube/"
 
-  # whether to manage aws auth or not 
+  # whether to manage aws auth or not
   # and the roles, users, and accounts to add
-  manage_aws_auth = true 
+  manage_aws_auth = true
 
   map_roles = []
   map_accounts = []
-  map_users = [
-    {
-      userarn  = "arn:aws:iam::***REMOVED***:user/mike.bell",
-      username = "mike.bell"
-      groups   = ["system:masters"]
-    },
-    {
-      userarn  = "arn:aws:iam::***REMOVED***:user/stu.tily",
-      username = "stu.tily"
-      groups   = ["system:masters"]
-    }
-  ]
+  # map_users - see terraform..tfvars.example and copy to terraform.tfvars
 }
 
 terraform {

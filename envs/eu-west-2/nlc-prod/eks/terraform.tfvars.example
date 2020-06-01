@@ -1,0 +1,12 @@
+map_users = [
+  {
+    userarn  = "arn:aws:iam::XXXX:user/username",
+    username = "username"
+    groups   = ["system:masters"]
+  },
+  {
+    userarn  = "arn:aws:iam::XXX:user/username",
+    username = "username"
+    groups   = ["system:masters"]
+  }
+]

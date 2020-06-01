@@ -1,4 +1,3 @@
-# terragrunt.hcl example
 remote_state {
   backend = "s3"
   config = {
